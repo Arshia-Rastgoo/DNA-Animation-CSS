@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(98, 21, 21, 0.941) 103.9% ); 
+
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform:rotate(-35deg) ;
+    transform-style: preserve-3d;
+}
+@keyframes rotate {
+    0%{
+
+    }
+    100%{
+          transform: rotateX(360deg);
+    }
+    
+}
+.dna{
+    margin-left: 18px;
+    width: 1.5px;
+    height: 120px;
+    
+    animation: rotate linear 3s infinite;
+    box-shadow: 0 0 5px rgb(192, 181, 22);
+   
+}
+.dna:nth-child(odd){
+    border: 1.5px dashed #060605;
+
+}
+.dna:nth-child(even){
+    border: 1.5px dashed #dadace;
+
+}
+.dna:nth-child(odd)::before{
+    content: "";
+    position:absolute;
+    height: 14px;
+    width: 14px;
+    background: rgb(3, 171, 56);
+    border-radius: 50%;
+    left: -6px;
+    bottom: -3px;
+    box-shadow: 0 0 10px rgb(195, 226, 188);
+}
+.dna:nth-child(even)::before{
+    content: "";
+    position:absolute;
+    height: 14px;
+    width: 14px;
+    background: rgb(255, 213, 1);
+    /* border-radius: 50%; */
+    left: -6px;
+    bottom: -3px;
+    box-shadow: 0 0 10px rgb(195, 226, 188);
+}
+.dna:nth-child(even):after{
+    content: "";
+    position:absolute;
+    height: 14px;
+    width: 14px;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+    left: -6px;
+    bottom:120px;
+    box-shadow: 0 0 10px rgb(207, 196, 176);
+}
+.dna:nth-child(odd):after{
+    content: "";
+    position:absolute;
+    height: 14px;
+    width: 14px;
+    background: rgb(5, 105, 255);
+    /* border-radius: 50%; */
+    left: -6px;
+    bottom:120px;
+    box-shadow: 0 0 10px rgb(207, 196, 176);
+}
+.dna:nth-child(1){
+    animation-delay: -0.15s;
+}
+.dna:nth-child(2){
+    animation-delay: -0.3s;
+}
+.dna:nth-child(3){
+    animation-delay: -0.45s;
+}
+.dna:nth-child(4){
+    animation-delay: -0.6s;
+}
+.dna:nth-child(5){
+    animation-delay: -0.75s;
+}
+.dna:nth-child(6){
+    animation-delay: -0.9s;
+}
+.dna:nth-child(7){
+    animation-delay: -1.05s;
+}
+.dna:nth-child(8){
+    animation-delay: -1.2s;
+}
+.dna:nth-child(9){
+    animation-delay: -1.35s;
+}
+.dna:nth-child(10){
+    animation-delay: -1.5s;
+}
+.dna:nth-child(11){
+    animation-delay: -1.65s;
+}
+.dna:nth-child(12){
+    animation-delay: -1.8s;
+}
+.dna:nth-child(13){
+    animation-delay: -1.95s;
+}
+.dna:nth-child(14){
+    animation-delay: -2.1s;
+}
+.dna:nth-child(15){
+    animation-delay: -2.25s;
+}
+.dna:nth-child(16){
+    animation-delay: -2.4s;
+}
+.dna:nth-child(17){
+    animation-delay: -2.55s;
+}
+.dna:nth-child(18){
+    animation-delay: -2.7s;
+}
+.dna:nth-child(19){
+    animation-delay: -2.85s;
+}
+.dna:nth-child(20){
+    animation-delay: -3.0s;
+}
+.dna:nth-child(21){
+    animation-delay: -3.15s;
+}
+.dna:nth-child(22){
+    animation-delay: -3.3s;
+}
+.dna:nth-child(23){
+    animation-delay: -3.45s;
+}
+.dna:nth-child(24){
+    animation-delay: -3.6s;
+}
+.dna:nth-child(25){
+    animation-delay: -3.75s;
+}
+.dna:nth-child(26){
+    animation-delay: -3.9s;
+}
+.dna:nth-child(27){
+    animation-delay:-4.05s ;
+}
+.dna:nth-child(28){
+    animation-delay:-4.2s ;
+}
