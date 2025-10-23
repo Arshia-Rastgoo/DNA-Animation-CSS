@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 body{
-background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(66, 12, 12, 0.941) 93.9% ); 
+background-image: linear-gradient( 176deg,  rgb(16, 16, 16) 19.2%, rgba(46, 8, 8, 0.941) 63.9% ); 
 /* background-color: #2e2827; */
-display: flex;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 .main{
     display: flex;
@@ -89,6 +92,42 @@ display: flex;
     bottom:120px;
     box-shadow: 0 0 10px rgb(207, 196, 176);
 }
+.authur{
+  display: flex;
+  align-items:center;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+
+}
+#mypic{
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.info-wrap{
+    display: none;
+    overflow: hidden;
+    will-change: transform;
+}
+.info{
+    opacity: 1;
+    gap: 8px;
+    
+    transform: translateY(6px);
+    transition: transform 1s ease;
+}
+
+.authur:hover .info-wrap{
+    display: block;
+    transform: translateY(0);
+  
+}
+img {
+    cursor: pointer;
+}
+
 .dna:nth-child(1){
     animation-delay: -0.15s;
 }
@@ -172,4 +211,42 @@ display: flex;
 }
 .dna:nth-child(28){
     animation-delay:-4.2s ;
+}
+@media (max-width: 1200px) {
+  .main {
+    width: min(92vw, 860px);
+    transform: rotate(-34deg);
+  }
+  .dna { height: min(120px, 20vh); }
+}
+@media (max-width: 900px) {
+  .main {
+    width: min(94vw, 720px);
+    transform: rotate(-33deg);
+  }
+  .dna { height: min(110px, 18vh); }
+}
+@media (max-width: 600px) {
+  .main {
+    width: min(96vw, 520px);
+    transform: rotate(-32deg);
+    padding: 3vw;
+  }
+  .dna { height: min(100px, 14.5vh); }
+  #mypic {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (max-width: 420px) {
+  .main {
+    width: min(96vw, 420px);
+    transform: rotate(-31deg);
+    padding: 4vw;
+    overflow:hidden ;
+  }
+  .dna { height: min(90px, 12.5vh); 
+   margin-left:10px ; }
+  #mypic { height: 90px; width: 90px; }
+  .authur { bottom: 4px; left: 4px; }
 }
