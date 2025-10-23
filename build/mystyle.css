@@ -219,41 +219,18 @@ img {
 .dna:nth-child(28){
     animation-delay:-4.2s ;
 } 
-@media (max-width: 1200px) {
-  .main {
-    width: min(92vw, 860px);
-    transform: rotate(-34deg);
-  }
-  .dna { height: min(120px, 20vh); }
-}
-@media (max-width: 900px) {
-  .main {
-    width: min(94vw, 720px);
-    transform: rotate(-33deg);
-  }
-  .dna { height: min(110px, 18vh); }
-}
-@media (max-width: 600px) {
-  .main {
-    width: min(96vw, 520px);
-    transform: rotate(-32deg);
-    padding: 3vw;
-  }
-  .dna { height: min(100px, 14.5vh); }
+ 
+ @media (max-width: 600px) {
+  
   #mypic {
     height: 100px;
     width: 100px;
   }
-}
-@media (max-width: 420px) {
-  .main {
-    width: min(96vw, 420px);
-    transform: rotate(-31deg);
-    padding: 4vw;
-    overflow:hidden ;
+} 
+ @media (max-width: 420px) {
+  .dna{
+    /* height: 100px; */
   }
-  .dna { height: min(90px, 12.5vh); 
-   margin-left:10px ; }
-  #mypic { height: 90px; width: 90px; }
+  #mypic { height: 85px; width: 85px; }
   .authur { bottom: 4px; left: 4px; }
-}
+} 
